@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CareWell Clinic | Family Doctor & Healthcare in India</title>
+<meta name="description" content="CareWell Clinic is a friendly family clinic for children, adults and seniors. Book an appointment on WhatsApp for check-ups, vaccinations, diabetes care and more.">
+<meta name="theme-color" content="#1f8a5b">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CareWell Clinic | Family Doctor & Healthcare">
+<meta property="og:description" content="Caring, unhurried healthcare for the whole family. Book on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3faf6;--surface:#fff;--ink:#12302a;--muted:#4b6b60;--green:#1f8a5b;--green-d:#14694390;--green-h:#166b46;--tint:#e0f3e8;--line:#d2e8dc;--on-green:#fff;--hero:linear-gradient(160deg,#dff3e7,#f3faf6 70%);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1a15;--surface:#12261f;--ink:#e8f6ee;--muted:#a2c2b4;--green:#4fc58c;--green-h:#7ddba9;--tint:#173a2d;--line:#24493a;--on-green:#06241a;--hero:linear-gradient(160deg,#0f2b21,#0b1a15 70%);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b1a15;--surface:#12261f;--ink:#e8f6ee;--muted:#a2c2b4;--green:#4fc58c;--green-h:#7ddba9;--tint:#173a2d;--line:#24493a;--on-green:#06241a;--hero:linear-gradient(160deg,#0f2b21,#0b1a15 70%);color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;overflow-x:clip;background:var(--bg);color:var(--ink);font:18px/1.65 Nunito,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-text-size-adjust:100%}
+h1,h2,h3{line-height:1.15;margin:0;letter-spacing:-.01em}
+h1{font-size:clamp(2.1rem,7vw,3.6rem);font-weight:800}
+h2{font-size:clamp(1.8rem,5vw,2.4rem);font-weight:800;margin-bottom:.5rem}
+h3{font-size:1.2rem;font-weight:700}
+p{margin:0}
+a{color:inherit}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+section{padding:60px 0}
+.sub{color:var(--muted);max-width:56ch;margin-bottom:30px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:24px;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
+@media (hover:hover){.card:hover{transform:translateY(-5px);box-shadow:0 14px 30px rgba(31,138,91,.16);border-color:var(--green)}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:56px;padding:0 30px;border-radius:999px;font-weight:800;font-size:1.08rem;text-decoration:none;border:2px solid var(--green);transition:background .15s,transform .15s}
+.btn.primary{background:var(--green);color:var(--on-green)}
+.btn.primary:hover{background:var(--green-h)}
+.btn.ghost{background:var(--surface);color:var(--green)}
+.btn.ghost:hover{background:var(--tint)}
+.btn:active{transform:scale(.98)}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--green);outline-offset:3px;border-radius:12px}
+.grid{display:grid;gap:16px}
+
+/* hero */
+.hero{background:var(--hero);padding:0 0 52px}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 0}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.15rem;text-decoration:none}
+.logo i{width:38px;height:38px;border-radius:12px;background:var(--green);color:var(--on-green);display:grid;place-items:center;font-style:normal;font-size:1.3rem}
+.bar .call{font-weight:800;color:var(--green);text-decoration:none}
+.hero-grid{display:grid;gap:34px;align-items:center;padding-top:20px}
+.hero-grid>*{min-width:0}
+.lead{font-size:1.2rem;color:var(--muted);margin:16px 0 26px;max-width:44ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.cta .btn{flex:1 1 200px}
+.badges{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:22px;color:var(--muted);font-weight:700;font-size:.98rem}
+.badges span::before{content:"✓ ";color:var(--green)}
+.next{max-width:400px;width:100%;justify-self:center;box-shadow:0 18px 40px rgba(31,138,91,.16)}
+.next .tag{display:inline-block;background:var(--tint);color:var(--green);border-radius:999px;padding:2px 14px;font-weight:800;font-size:.88rem}
+.next h3{margin:12px 0 4px}
+.next .slots{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 4px}
+.next .slots b{border:1.5px solid var(--green);color:var(--green);border-radius:999px;padding:4px 14px;font-size:.95rem}
+.next p{color:var(--muted);font-size:.95rem}
+
+/* doctor */
+.doc{display:grid;gap:24px;align-items:center}
+.avatar{width:140px;height:140px;border-radius:50%;background:var(--tint);border:4px solid var(--green);display:grid;place-items:center;font-size:3.6rem;margin:0 auto}
+.doc h2{margin-bottom:2px}
+.role{color:var(--green);font-weight:800;margin-bottom:12px}
+.quals{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:8px}
+.quals li{padding-left:28px;position:relative;color:var(--muted)}
+.quals li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:800}
+.quals b{color:var(--ink)}
+
+/* services */
+.band{background:var(--tint)}
+.svc .ic{width:54px;height:54px;border-radius:16px;background:var(--tint);display:grid;place-items:center;font-size:1.7rem;margin-bottom:12px}
+.svc p{color:var(--muted);margin-top:6px}
+.band .svc .ic{background:var(--bg)}
+
+/* timings */
+.times{max-width:560px}
+.trow{display:flex;justify-content:space-between;gap:12px;padding:14px 0;border-top:1px solid var(--line);font-weight:700}
+.trow:first-child{border-top:0;padding-top:0}
+.trow span:last-child{color:var(--muted);font-weight:600;text-align:right}
+.trow.closed span:last-child{color:var(--green)}
+.note{color:var(--muted);font-size:.95rem;margin-top:14px}
+
+/* reviews */
+blockquote{margin:0;display:flex;flex-direction:column;gap:12px;height:100%}
+.stars{color:#f0a020;letter-spacing:2px}
+blockquote footer{margin-top:auto;font-weight:800}
+blockquote footer span{display:block;color:var(--muted);font-weight:600;font-size:.92rem}
+
+/* faq */
+details{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:0 22px;margin-bottom:12px}
+summary{cursor:pointer;list-style:none;font-weight:800;padding:18px 30px 18px 0;position:relative;min-height:58px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);font-size:1.7rem;color:var(--green);transition:transform .2s}
+details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+details p{color:var(--muted);padding-bottom:18px}
+
+/* contact */
+.info div{padding:14px 0;border-top:1px solid var(--line)}
+.info div:first-child{border-top:0;padding-top:0}
+.info small{display:block;color:var(--muted);font-weight:700}
+.info a{color:var(--green);font-weight:800;text-decoration:none}
+.contact .btn{width:100%;margin-top:18px}
+
+/* footer */
+footer.site{background:var(--ink);color:#d8efe3;padding:36px 0 28px;font-size:.98rem}
+:root[data-theme="dark"] footer.site{background:#06100c}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) footer.site{background:#06100c}}
+footer.site .cols{display:grid;gap:22px}
+footer.site h3{color:#fff;font-size:1.05rem;margin-bottom:6px}
+footer.site a{display:block;padding:4px 0;text-decoration:none}
+.legal{margin-top:26px;padding-top:16px;border-top:1px solid rgba(255,255,255,.18);font-size:.88rem;opacity:.8}
+
+@media (min-width:720px){
+.hero-grid{grid-template-columns:1.1fr .9fr}
+.g3{grid-template-columns:repeat(3,1fr)}
+.doc{grid-template-columns:200px 1fr;gap:36px}
+.avatar{width:190px;height:190px;font-size:5rem}
+.two{grid-template-columns:1fr 1fr}
+footer.site .cols{grid-template-columns:2fr 1fr 1fr}
+.cta .btn{flex:0 0 auto}
+}
+@media (max-width:400px){
+body{font-size:17px}
+.wrap{padding:0 16px}
+section{padding:46px 0}
+.card{padding:20px;border-radius:22px}
+h1{font-size:2rem}
+.logo{font-size:1rem;gap:8px}
+.logo i{width:34px;height:34px}
+details{padding:0 18px}
+.trow{flex-direction:column;gap:2px}
+.trow span:last-child{text-align:left}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.card:hover{transform:none!important}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="bar">
+      <a class="logo" href="#top"><i>✚</i> CareWell Clinic</a>
+      <a class="call" href="tel:+919876543210">📞 Call</a>
+    </div>
+    <div class="hero-grid" id="top">
+      <div>
+        <h1>Caring, unhurried healthcare for your whole family.</h1>
+        <p class="lead">From a child’s first vaccine to a parent’s sugar check, our family doctor is here to listen, explain and treat with care.</p>
+        <div class="cta">
+          <a class="btn primary" href="https://wa.me/919876543210?text=Hello%20CareWell%20Clinic%2C%20I%E2%80%99d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Book Appointment</a>
+          <a class="btn ghost" href="#timings">Clinic timings</a>
+        </div>
+        <div class="badges"><span>Experienced family doctor</span><span>Short waiting time</span><span>Clean, safe clinic</span></div>
+      </div>
+      <div class="card next" aria-hidden="true">
+        <span class="tag">Walk-ins welcome</span>
+        <h3>Book in two minutes</h3>
+        <p>Pick a time on WhatsApp and we will confirm it for you.</p>
+        <div class="slots"><b>10:00 AM</b><b>12:30 PM</b><b>5:30 PM</b></div>
+        <p>Sample slots. Actual availability may vary.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="doctor">
+  <div class="wrap">
+    <div class="card doc">
+      <div class="avatar" aria-hidden="true">👩‍⚕️</div>
+      <div>
+        <h2>Dr. Ananya Mehta</h2>
+        <div class="role">Family Physician · 12+ years of experience</div>
+        <p>Dr. Mehta believes good care starts with listening. She treats patients of all ages and takes time to explain every diagnosis in simple words.</p>
+        <ul class="quals">
+          <li><b>MBBS</b> – Government Medical College</li>
+          <li><b>MD (Family Medicine)</b> – 2013</li>
+          <li><b>Diploma in Diabetology</b> – Certified</li>
+          <li>Registered with the State Medical Council (Reg. No. 12345)</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note">Sample profile. Replace the name, qualifications and registration number with the doctor’s real details.</p>
+  </div>
+</section>
+
+<section class="band" id="services">
+  <div class="wrap">
+    <h2>Our services</h2>
+    <p class="sub">Complete care for every age, close to home.</p>
+    <div class="grid g3">
+      <div class="card svc"><div class="ic">🩺</div><h3>General consultation</h3><p>Fever, cold, infections, aches and everyday health concerns.</p></div>
+      <div class="card svc"><div class="ic">👶</div><h3>Child care & vaccination</h3><p>Growth checks, immunisation schedules and child illnesses.</p></div>
+      <div class="card svc"><div class="ic">🌸</div><h3>Women’s health</h3><p>General check-ups, advice and care for common concerns.</p></div>
+      <div class="card svc"><div class="ic">🩸</div><h3>Diabetes & BP care</h3><p>Regular monitoring, diet advice and medicine reviews.</p></div>
+      <div class="card svc"><div class="ic">👵</div><h3>Elderly care</h3><p>Gentle, long-term care for seniors and their medicines.</p></div>
+      <div class="card svc"><div class="ic">📋</div><h3>Health check-ups</h3><p>Preventive packages, minor dressings and sample collection.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="timings">
+  <div class="wrap">
+    <h2>Clinic timings</h2>
+    <p class="sub">Come in during these hours or book a slot to skip the wait.</p>
+    <div class="card times">
+      <div class="trow"><span>Monday – Friday</span><span>9:00 AM – 1:00 PM, 5:00 PM – 8:30 PM</span></div>
+      <div class="trow"><span>Saturday</span><span>9:00 AM – 1:00 PM, 5:00 PM – 7:30 PM</span></div>
+      <div class="trow closed"><span>Sunday</span><span>Closed (emergency calls only)</span></div>
+    </div>
+    <p class="note">Sample timings. Update them to match your clinic.</p>
+  </div>
+</section>
+
+<section class="band" id="reviews">
+  <div class="wrap">
+    <h2>What our patients say</h2>
+    <p class="sub">Sample reviews. Replace with real patient feedback.</p>
+    <div class="grid g3">
+      <div class="card"><blockquote><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>Dr. Mehta explained my son’s fever and the medicines patiently. We never feel rushed here.</p><footer>Sunita Verma<span>Parent</span></footer></blockquote></div>
+      <div class="card"><blockquote><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>My father’s sugar is finally under control. The follow-up reminders on WhatsApp are very helpful.</p><footer>Arjun Reddy<span>Diabetes care</span></footer></blockquote></div>
+      <div class="card"><blockquote><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>A clean, calm clinic with caring staff. Booking an appointment took less than a minute.</p><footer>Fatima Sheikh<span>General check-up</span></footer></blockquote></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap" style="max-width:760px">
+    <h2>Frequently asked questions</h2>
+    <p class="sub">Quick answers before your visit.</p>
+    <details><summary>Do I need an appointment?</summary><p>Walk-ins are welcome, but booking a slot on WhatsApp keeps your waiting time short.</p></details>
+    <details><summary>Do you treat children and seniors?</summary><p>Yes. Our family doctor sees patients of all ages, from newborns to senior citizens.</p></details>
+    <details><summary>What should I bring to my first visit?</summary><p>Please bring old prescriptions, medical reports and a list of medicines you take. A photo ID is helpful.</p></details>
+    <details><summary>How much is the consultation fee?</summary><p>Our fee is shown at the clinic reception and shared on WhatsApp when you book. Follow-up visits within a few days are often discounted.</p></details>
+    <details><summary>Can I get a follow-up by phone or WhatsApp?</summary><p>Yes. For quick questions and report reviews you can message us. For emergencies, please visit the nearest hospital.</p></details>
+  </div>
+</section>
+
+<section class="band contact" id="contact">
+  <div class="wrap" style="max-width:760px">
+    <h2>Visit or message us</h2>
+    <p class="sub">We usually reply within a few minutes during clinic hours.</p>
+    <div class="card info">
+      <div><small>Phone</small><a href="tel:+919876543210">+91 98765 43210</a></div>
+      <div><small>WhatsApp</small><a href="https://wa.me/919876543210" target="_blank" rel="noopener">+91 98765 43210</a></div>
+      <div><small>Address</small>45, Green Park Road, Near Community Centre, Your City – 400001</div>
+      <div><small>Email</small><a href="mailto:hello@carewellclinic.in">hello@carewellclinic.in</a></div>
+      <a class="btn primary" href="https://wa.me/919876543210?text=Hello%20CareWell%20Clinic%2C%20I%20have%20a%20question." target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div><h3>CareWell Clinic</h3><p>Friendly, trusted family healthcare for every age.</p></div>
+      <div><h3>Quick links</h3><a href="#doctor">Our doctor</a><a href="#services">Services</a><a href="#timings">Timings</a><a href="#faq">FAQ</a></div>
+      <div><h3>Contact</h3><a href="tel:+919876543210">+91 98765 43210</a><a href="https://wa.me/919876543210" target="_blank" rel="noopener">WhatsApp</a></div>
+    </div>
+    <div class="legal">© 2026 CareWell Clinic. In a medical emergency, please go to the nearest hospital or call 112.</div>
+  </div>
+</footer>
+</body>
+</html>
